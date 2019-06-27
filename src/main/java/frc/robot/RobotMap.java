@@ -13,5 +13,6 @@ public class RobotMap {
                 L_DRIVE_0 = 0,
                 L_DRIVE_1 = 1,
                 R_DRIVE_0 = 2,
-                R_DRIVE_1 = 3;
+                R_DRIVE_1 = 3,
+                ROLLER = 12;
 }

@@ -8,6 +8,10 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.Button;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import frc.robot.commands.RollerOff;
+import frc.robot.commands.RollerOn;
 
 
 /**
@@ -17,4 +21,12 @@ import edu.wpi.first.wpilibj.Joystick;
 public class OI {
   public Joystick drv1 = new Joystick(0);
   public Joystick drv2 = new Joystick(1);
+  public Joystick opr = new Joystick(2);
+
+  Button rollerBtn = new JoystickButton(opr, 5);
+
+  public OI(){
+    rollerBtn.whenPressed(new RollerOn());
+    rollerBtn.whenReleased(new RollerOff());
+  }
 }
