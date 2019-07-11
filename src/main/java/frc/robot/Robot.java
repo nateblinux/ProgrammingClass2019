@@ -11,12 +11,16 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
+import frc.robot.subsystems.Basket;
 import frc.robot.subsystems.Drivetrain;
+import frc.robot.subsystems.Ramp;
 import frc.robot.subsystems.Roller;
 
 public class Robot extends TimedRobot {
   public static Drivetrain drivetrain = new Drivetrain();
   public static Roller roller = new Roller();
+  public static Ramp ramp = new Ramp();
+  public static Basket basket = new Basket();
   public static OI oi;
 
   Command m_autonomousCommand;

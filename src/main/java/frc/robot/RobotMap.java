@@ -14,5 +14,9 @@ public class RobotMap {
                 L_DRIVE_1 = 1,
                 R_DRIVE_0 = 2,
                 R_DRIVE_1 = 3,
-                ROLLER = 12;
+                ROLLER = 12,
+                RAMP_L = 0,
+                RAMP_R = 1,
+                BASKET_1 = 4,
+                BASKET_2 = 5;
 }
